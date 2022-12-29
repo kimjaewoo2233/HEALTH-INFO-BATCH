@@ -1,0 +1,20 @@
+
+---
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/study?serverTimezone=Asia/Seoul&rewriteBatchedStatements=true
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+---
+spring:
+  batch:
+    jdbc:
+
+      initialize-schema: always
